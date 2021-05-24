@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Lewis
  * @Date: 2021-05-16 11:18:23
- * @LastEditTime: 2021-05-16 16:57:57
+ * @LastEditTime: 2021-05-18 10:59:05
  * @LastEditors: Lewis
  */
 
@@ -21,3 +21,10 @@ export const statuses=[
         label:'COMPLETED'
     }
 ]
+
+export const STATUS_CODE={
+    SUCCESS:200,
+    CREATED:201,
+    UPDATED:202
+    
+}

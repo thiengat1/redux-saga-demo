@@ -1,15 +1,20 @@
 /*
- * @Description: 
+ * @Description:
  * @Author: Lewis
  * @Date: 2021-05-16 16:28:57
- * @LastEditTime: 2021-05-16 16:52:07
+ * @LastEditTime: 2021-05-21 09:06:47
  * @LastEditors: Lewis
  */
-import { combineReducers} from 'redux'
-import taskReducer from './task'
+import { combineReducers } from "redux";
+import taskReducer from "./task";
+import uiReducer from "./ui";
+import modalReducer from "./modal";
+import { reducer as formReducer } from "redux-form";
 
-const rootReducer=combineReducers({
-    task:taskReducer
-
-})
-export default rootReducer
+const rootReducer = combineReducers({
+  task: taskReducer,
+  ui: uiReducer,
+  modal: modalReducer,
+  form: formReducer,
+});
+export default rootReducer;
